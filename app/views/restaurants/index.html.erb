@@ -5,5 +5,6 @@
         <li><%= restaurant.name %></li>
         <p><%= restaurant.address %></p>
         <p><%= "🌟" * restaurant.rating %></p>
+        <p><%= link_to restaurant.name, restaurant_path(restaurant) %></p>
     <% end %>
 </ol>
