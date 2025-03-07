@@ -1,0 +1,17 @@
+<h1>Make corrections to a restaurant of your choice :D</h1>
+
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :cuisine %>
+  <%= f.text_field :cuisine %>
+  <%= f.label :spice_level %>
+  <%= f.text_field :spice_level %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.label :customer_service_score %>
+  <%= f.text_field :customer_service_score %>
+  <%= f.submit %>
+<% end %>
