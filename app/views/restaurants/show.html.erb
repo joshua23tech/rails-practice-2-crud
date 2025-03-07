@@ -1,0 +1,19 @@
+<h1><%= @restaurant.name %></h1>
+
+<h2>Key Details</h2>
+
+<h3>Address</h3>
+<%= "📍" + @restaurant.address %>
+
+<h3>Cuisine</h3>
+<%= "👨‍🍳" + " " + "#{@restaurant.cuisine}" %>
+
+<h3>Rating</h3>
+<%= "⭐️" * @restaurant.rating %>
+
+<h3>Spice Profile</h3>
+<%= "🌶️" * @restaurant.spice_level %>
+
+<h3>Customer Service Score</h3>
+<%= "🫴" + " " + "#{@restaurant.customer_service_score}" %>
+
